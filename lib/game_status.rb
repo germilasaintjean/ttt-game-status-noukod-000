@@ -6,7 +6,7 @@ end
         WIN_COMBINATIONS = [0,1,2],
                            [3,4,5],
                            [6,7,8]
-                           
+
         win_combination.each do |win_index|
         win_combination. eeach do |position|
         win_index_1 =  win_combinaison[0]
@@ -16,7 +16,7 @@ end
        position_1 = board[win_index_1]
        position_2 = board[win_index_2]
        position_3 = board[win_index_3]
-       
+
 def won_board(board)
   if position_1 == "X" && position_2 == "X" position_3 == "X"
   return win_combinaison
@@ -31,7 +31,7 @@ def full(board)
   if full_board = ["X", "O", "X", "O", "X", "O", "X", "O", "X"]
   full?(full_board)
   true
-else 
+else
   incomplete_board = ["X", " ", "X", "O", " ", "X", "O", " ", "O"]
 return false
 end
@@ -42,10 +42,10 @@ def draw_board(board)
      draw?(draw_board)
       true
   elsif x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
-       draw?(x_diagonal_won) 
+       draw?(x_diagonal_won)
       false
   else incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
-    draw?(incomplete_board) 
+    draw?(incomplete_board)
      return false
    end
  end
@@ -53,17 +53,14 @@ end
 
 def winner board
    if x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-    winner(x_win_diagonal) 
+    winner(x_win_diagonal)
     return "X"
    elsif o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-  winner(o_win_center_column) 
+  winner(o_win_center_column)
    return "O"
   else no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
-  winner(no_winner_board) 
+  winner(no_winner_board)
   nil
  end
  end
 end
-
-
-
