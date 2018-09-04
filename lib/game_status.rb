@@ -44,7 +44,7 @@ def draw_board(board)
        draw?(x_diagonal_won)
       return false
     end
-  else incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
+  if incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
     draw?(incomplete_board)
      return false
  end
