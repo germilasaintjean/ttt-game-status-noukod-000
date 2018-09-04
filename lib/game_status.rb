@@ -51,8 +51,8 @@ end
 end
 
  def winner?(board)
-   won?(board) == "X" || !won?(board) &&  full?(board)
-   return "true"
+   won?(board) == "X"
+   return "X"
  end
  nil
 end
