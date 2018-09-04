@@ -53,6 +53,6 @@ end
  def winner?(board)
   board.all?{ |index| index == "X"  }
    return "X"
- end
+  !board.all?{ |index| index == "X"  }
    nil
   end
