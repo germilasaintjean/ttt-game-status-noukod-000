@@ -51,10 +51,10 @@ end
 end
 
  def winner?(board)
-   won?(board) = "X"
+   won?(board) == "X"
    return "X"
  end
-  board = draw?(board)
+  board == draw?(board)
    return true
     end
  nil
