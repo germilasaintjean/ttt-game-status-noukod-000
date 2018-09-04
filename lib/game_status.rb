@@ -49,3 +49,10 @@ end
    end
    return false
 end
+
+ def winner?(board)
+return { |index| index == "X" ||index == "O"  }   
+ end
+ nil
+end
+
