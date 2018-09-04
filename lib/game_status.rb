@@ -34,9 +34,12 @@ end
  def full?(board)
    board.all?{ |index| index == "X" ||index == "O"  }
  end
+ 
   def draw?(board)
-    if !won?(board) &&  full?(board)
-      return true
+     if !won?(board) &&  full?(board)
+       return true
     elsif !won?(board) && !full?(board) || !won?(board)
   return false
 end
+end
+
