@@ -50,12 +50,16 @@ end
    return false
 end
 
- def winner?(board)
-  board.all?{ |index| index == "X"  }
-   return "X"
+ def winner (board)
+   index = []
+   index = won?(board)
+   if index == false 
+     return nil
+   else
+     if board[index[o]] == "X"  
+       return "X"
+  else
+    return "O"
+   end
  end
-  board.all?{ |index| index == "O"  }
-  return "O"
 end
-   nil
-  end
