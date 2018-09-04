@@ -51,7 +51,7 @@ end
 end
 
  def winner?(board)
-   board = won?(board)
+   won?(board) == "X"
    return "X"
  end
  elsif board = draw?(board)
