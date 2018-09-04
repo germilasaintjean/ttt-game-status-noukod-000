@@ -19,12 +19,10 @@ end
 
 def won_board(board)
   if position_1 == "X" && position_2 == "X" position_3 == "X"
-  return win_combinaison
-end
+   win_combinaison
 else
   false
  end
-end
 end
 
 def full(board)
@@ -43,7 +41,8 @@ def draw_board(board)
       true
   elsif x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
        draw?(x_diagonal_won)
-      false
+      return false
+    end
   else incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
     draw?(incomplete_board)
      return false
@@ -54,11 +53,14 @@ def winner board
    if x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
     winner(x_win_diagonal)
     return "X"
+  end
    elsif o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
   winner(o_win_center_column)
    return "O"
+ end
   else no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
   winner(no_winner_board)
   nil
+end
  end
 end
