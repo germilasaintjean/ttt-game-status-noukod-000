@@ -54,5 +54,8 @@ end
    board = won?(board)
    return "X"
  end
+ elsif board = draw?(board)
+   return true
+    end
  nil
 end
