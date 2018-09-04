@@ -47,7 +47,6 @@ def draw_board(board)
   else incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
     draw?(incomplete_board)
      return false
-   end
  end
 end
 
@@ -61,6 +60,5 @@ def winner board
   else no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
   winner(no_winner_board)
   nil
- end
  end
 end
