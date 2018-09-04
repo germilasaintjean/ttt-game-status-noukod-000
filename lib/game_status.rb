@@ -51,7 +51,8 @@ end
 end
 
  def winner?(board)
-return { |index| index == "X" ||index == "O"  }
+   board = won?(board)
+   return "X"
  end
  nil
 end
